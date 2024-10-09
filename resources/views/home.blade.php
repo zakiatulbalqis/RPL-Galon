@@ -6,10 +6,10 @@
     <title>AQUANTER</title>
     <link rel="stylesheet" href="style/home.css">
 </head>
-<body style = "background-image: url("img/WhatsApp Image 2024-10-06 at 14.25.55 (3).jpeg")">
+<body style = "background-image: url("img/WhatsApp Image 2024-10-06 at 14.25.55 (3).jpeg")>
     <header>
         <div class="nav-bar">
-            <a href="#" class="logo">AQUANTER</a>
+            <a href="/" class="logo">AQUANTER</a>
             <nav>
                 <a href="/">BERANDA</a>
             </nav>

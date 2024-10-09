@@ -4,12 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AQUANTER - Rincian Pemesanan</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style/rincian.css">
 </head>
 <body>
     <div class="header">
         <h1>AQUANTER</h1>
-        <a href="#" class="home-icon">🏠</a>
+        <a href="/" class="home-icon">🏠</a>
     </div>
 
     <div class="order-details">
@@ -30,7 +30,7 @@
                 <span class="shop-name">Aquanter_shop</span>
             </div>
             <div class="item-info">
-                <img src="mineral.jpg" alt="Mineral" class="item-image">
+            <img src="img/WhatsApp Image 2024-10-05 at 15.39.54 copy.jpeg" alt="Mineral" class="item-image">
                 <div class="item-details">
                     <span class="item-name">Mineral</span><br>
                     <span class="item-quantity">Jumlah: 2</span><br>
@@ -46,6 +46,6 @@
         <button class="cancel-btn">Batalkan Pesanan</button>
     </div>
 
-    <script src="script.js"></script>
+    <script src="script/rincian.php"></script>
 </body>
 </html>

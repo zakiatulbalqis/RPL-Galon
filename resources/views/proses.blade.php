@@ -10,7 +10,7 @@
     <div class="header">
         <h1>AQUANTER</h1>
         <div class="cart-icon">
-            <img src="img/Screenshot_2024-10-05_222712-removebg-preview (1).png" alt="Cart" />
+            <a href="/rincian"><img src="img/Screenshot_2024-10-05_222712-removebg-preview (1).png" alt="Cart" /></a>
         </div>
     </div>
 

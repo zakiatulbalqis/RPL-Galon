@@ -17,7 +17,7 @@
         <div class="product">
             <div class="item">
                 <p>MINERAL</p>
-                <img src="img/WhatsApp Image 2024-10-05 at 14.25.55 copy.jpeg" alt="Mineral">
+                <img src="img/WhatsApp Image 2024-10-05 at 15.39.54 copy.jpeg" alt="Mineral">
                 <p>Rp 5.000</p>
                 <button onclick="updateCount('mineral', -1)">-</button>
                 <input type="number" id="mineral" value="0" min="0">
@@ -25,7 +25,7 @@
             </div>
             <div class="item">
                 <p>RO</p>
-                <img src="img/WhatsApp Image 2024-10-06 at 14.25.55 copy.jpeg" alt="RO">
+                <img src="img/WhatsApp Image 2024-10-05 at 15.39.54 copy.jpeg" alt="RO">
                 <p>Rp 10.000</p>
                 <button onclick="updateCount('ro', -1)">-</button>
                 <input type="number" id="ro" value="0" min="0">
@@ -33,7 +33,7 @@
             </div>
             <div class="item">
                 <p>HEXA</p>
-                <img src="img/WhatsApp Image 2024-10-06 at 14.25.55 copy.jpeg" alt="Hexa">
+                <img src="img/WhatsApp Image 2024-10-05 at 15.39.54 copy.jpeg" alt="Hexa">
                 <p>Rp 12.000</p>
                 <button onclick="updateCount('hexa', -1)">-</button>
                 <input type="number" id="hexa" value="0" min="0">
