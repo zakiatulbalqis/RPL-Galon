@@ -34,7 +34,7 @@
             <div class="item">
                 <p>HEXA</p>
                 <img src="img/WhatsApp Image 2024-10-05 at 15.39.54 copy.jpeg" alt="Hexa">
-                <p>Rp 15.000</p>
+                <p>Rp 12.000</p>
                 <button onclick="updateCount('hexa', -1)">-</button>
                 <input type="number" id="hexa" value="0" min="0">
                 <button onclick="updateCount('hexa', 1)">+</button>
