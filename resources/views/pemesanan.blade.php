@@ -16,8 +16,8 @@
 
         <div class="product">
             <div class="item">
-                <p>MINERAL</p>
-                <img src="img/WhatsApp Image 2024-10-05 at 15.39.54 copy.jpeg" alt="Mineral">
+                <p>LE MINERALE</p>
+                <img src="img/le_minerale.png" alt="Mineral">
                 <p>Rp 5.000</p>
                 <button onclick="updateCount('mineral', -1)">-</button>
                 <input type="number" id="mineral" value="0" min="0">
