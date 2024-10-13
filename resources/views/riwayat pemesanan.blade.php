@@ -3,39 +3,98 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AQUANTER Pemesanan</title>
-    <link rel="stylesheet" href="style/riwayat pemesanan.css">
+    <title>Tambah Data Pelanggan</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background-color: #f0f4f8;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .form-container {
+            background-color: #fff;
+            padding: 20px 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 350px;
+            text-align: center;
+        }
+
+        .form-container h1 {
+            margin-bottom: 20px;
+            font-size: 24px;
+            color: #333;
+        }
+
+        .input-group {
+            margin-bottom: 15px;
+            text-align: left;
+        }
+
+        .input-group label {
+            display: block;
+            margin-bottom: 5px;
+            color: #555;
+        }
+
+        .input-group input {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+
+        .form-container button {
+            background-color: #007bff;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.3s ease;
+        }
+
+        .form-container button:hover {
+            background-color: #0056b3;
+        }
+
+        .form-container .error-message {
+            color: red;
+            font-size: 14px;
+            margin-top: 10px;
+        }
+    </style>
 </head>
 <body>
-    <h1>Daftar Pelanggan</h1>
-    <a href="{{ route('pelanggans.create') }}">Tambah Pelanggan</a>
-    <table>
-        <thead>
-            <tr>
-                <th>ID</th>
-                <th>Nama</th>
-                <th>Alamat</th>
-                <th>No Telepon</th>
-                <th>Aksi</th>
-            </tr>
-        </thead>
-        <tbody>
-            @foreach ($pelanggans as $pelanggan)
-                <tr>
-                    <td>{{ $pelanggan->id }}</td>
-                    <td>{{ $pelanggan->nama }}</td>
-                    <td>{{ $pelanggan->alamat }}</td>
-                    <td>{{ $pelanggan->no_telepon }}</td>
-                    <td>
-                        <a href="{{ route('pelanggans.edit', $pelanggan->id) }}">Edit</a>
-                        <form action="{{ route('pelanggans.destroy', $pelanggan->id) }}" method="POST" style="display:inline;">
-                            @csrf
-                            @method('DELETE')
-                            <button type="submit">Delete</button>
-                        </form>
-                    </td>
-                </tr>
-            @endforeach
-        </tbody>
-    </table>
+    <div class="form-container">
+        <h1>Tambah Data Pelanggan</h1>
+        <form action="/tambah-pelanggan" method="POST">
+            @csrf <!-- Laravel CSRF protection -->
+            <div class="input-group">
+                <label for="nama">Nama:</label>
+                <input type="text" id="nama" name="nama" placeholder="Masukkan nama" required>
+            </div>
+            <div class="input-group">
+                <label for="alamat">Alamat:</label>
+                <input type="text" id="alamat" name="alamat" placeholder="Masukkan alamat" required>
+            </div>
+            <div class="input-group">
+                <label for="no_telepon">No Telepon:</label>
+                <input type="text" id="no_telepon" name="no_telepon" placeholder="Masukkan no telepon" required>
+            </div>
+            <button type="submit">Simpan</button>
+        </form>
+    </div>
 </body>
+</html>

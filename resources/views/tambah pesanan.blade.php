@@ -13,7 +13,7 @@
 
     <div class="container">
         <h2>pemesanan</h2>
-
+        @csrf
         <div class="product">
             <div class="item">
                 <p>MINERAL</p>

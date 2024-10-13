@@ -4,6 +4,8 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\PelangganController;
 use App\Models\Pelanggan;
 use App\Http\Controllers\OrderController;
+use App\Http\Controllers\LoginController;
+
 
 Route::get('/pemesanan', function () {
     return view('pemesanan');
@@ -30,10 +32,12 @@ Route::get('/tambah', function () {
     return view('tambah pesanan');
 });
 
-Route::get('/riwayat', function(){
-    $pelanggans = Pelanggan::all();
-    return view ('riwayat pemesanan', ['pelanggans' => $pelanggans]);
-});
+Route::post('/tambah',[PelangganController::class,'store']);
+
+Route::get('/login', [LoginController::class, 'showLoginForm'])->name('login');
+Route::post('/login', [LoginController::class, 'login']);
+Route::post('/logout', [LoginController::class, 'logout'])->name('logout');
+
 
 Route::resource('pelanggans', PelangganController::class);
 
