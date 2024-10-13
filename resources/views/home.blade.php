@@ -6,7 +6,7 @@
     <title>AQUANTER</title>
     <link rel="stylesheet" href="style/home.css">
 </head>
-<body style = "background-image: url("img/WhatsApp Image 2024-10-06 at 14.25.55 (3).jpeg")>
+<body>
     <header>
         <div class="nav-bar">
             <a href="/" class="logo">AQUANTER</a>

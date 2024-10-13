@@ -12,32 +12,34 @@
     </div>
 
     <div class="container">
-        <h2>pemesanan</h2>
+        <h2>PILIH PESANAN</h2>
 
         <div class="product">
             <div class="item">
-                <p>LE MINERALEE</p>
-                <img src="img/le_minerale.png" alt="Mineral">
-                 <p>Rp 5.000</p><!--HARGA -->
+                <p>Mineral</p>
+                <img src="img/WhatsApp Image 2024-10-05 at 15.39.54 copy.jpeg" alt="Mineral">
+                 <p>Rp 11.000</p><!--HARGA -->
                 <button onclick="updateCount('mineral', -1)">-</button>
                 <input type="number" id="mineral" value="0" min="0">
                 <button onclick="updateCount('mineral', 1)">+</button>
             </div>
+
             <div class="item">
                 <p>RO</p>
-                <img src="img/WhatsApp Image 2024-10-05 at 15.39.54 copy.jpeg" alt="RO">
-                <p>Rp 10.000</p>
-                <button onclick="updateCount('ro', -1)">-</button>
-                <input type="number" id="ro" value="0" min="0">
-                <button onclick="updateCount('ro', 1)">+</button>
+                <img src="img/WhatsApp Image 2024-10-05 at 15.39.54 copy.jpeg" alt="AQUA">
+                <p>Rp 5.000</p>
+                <button onclick="updateCount('AQUA', -1)">-</button>
+                <input type="number" id="AQUA" value="0" min="0">
+                <button onclick="updateCount('AQUA', 1)">+</button>
             </div>
+
             <div class="item">
-                <p>HEXA</p>
-                <img src="img/WhatsApp Image 2024-10-05 at 15.39.54 copy.jpeg" alt="Hexa">
+                <p>Hexa</p>
+                <img src="img/WhatsApp Image 2024-10-05 at 15.39.54 copy.jpeg" alt="cleo">
                 <p>Rp 12.000</p>
-                <button onclick="updateCount('hexa', -1)">-</button>
-                <input type="number" id="hexa" value="0" min="0">
-                <button onclick="updateCount('hexa', 1)">+</button>
+                <button onclick="updateCount('cleo', -1)">-</button>
+                <input type="number" id="cleo" value="0" min="0">
+                <button onclick="updateCount('cleo', 1)">+</button>
             </div>
         </div>
 

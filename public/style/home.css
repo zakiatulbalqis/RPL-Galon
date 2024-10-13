@@ -13,6 +13,14 @@ body {
     background-repeat: no-repeat; /* Jangan ulang gambar */   
 }
 
+body {
+    background-image: url('../img/water_background.jpg');
+    background-size: cover; /* This ensures the image covers the entire background */
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+
 /* Navbar Styling */
 .nav-bar {
     display: flex;
