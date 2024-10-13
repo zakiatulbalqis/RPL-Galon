@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\PelangganController;
 use App\Models\Pelanggan;
+use App\Http\Controllers\OrderController;
 
 Route::get('/pemesanan', function () {
     return view('pemesanan');
@@ -35,3 +36,7 @@ Route::get('/riwayat', function(){
 });
 
 Route::resource('pelanggans', PelangganController::class);
+
+Route::post('/order-submit', [OrderController::class, 'submit'])->name('order.submit');
+
+Route::get('/order-confirmation', [OrderController::class, 'konfirmasi'])->name('order.confirmation');
