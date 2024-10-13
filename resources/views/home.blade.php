@@ -6,6 +6,7 @@
     <title>AQUANTER</title>
 
 </head>
+<<<<<<< HEAD
 <style>
     * {
     margin: 0;
@@ -98,6 +99,8 @@ footer a {
 }
 </style>
 
+=======
+>>>>>>> d170d155ca7ab63615a9c11b487abea1ec414935
 <body>
     <header>
         <div class="nav-bar">
