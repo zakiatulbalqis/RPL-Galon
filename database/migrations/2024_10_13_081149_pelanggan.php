@@ -11,6 +11,12 @@ return new class extends Migration
      */
     public function up(): void
     {
+        Schema::create('pelanggan', function (Blueprint $table) {
+        $table->string('nama');
+        $table->mediumText('alamat');
+        $table->string('no_telepon');
+        $table->timestamps();
+        });
     }
 
     /**
