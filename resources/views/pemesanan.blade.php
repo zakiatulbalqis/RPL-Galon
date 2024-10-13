@@ -18,7 +18,7 @@
             <div class="item">
                 <p>LE MINERALEE</p>
                 <img src="img/le_minerale.png" alt="Mineral">
-                <p>Rp 5.000</p>
+                 <p>Rp 5.000</p><!--HARGA -->
                 <button onclick="updateCount('mineral', -1)">-</button>
                 <input type="number" id="mineral" value="0" min="0">
                 <button onclick="updateCount('mineral', 1)">+</button>
