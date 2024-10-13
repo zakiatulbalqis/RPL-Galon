@@ -21,7 +21,7 @@
         <section class="hero">
             <h1>Selamat Datang di <br> AQUANTER!</h1>
             <p>Penjualan galon siap antar</p>
-            <p>Pemesanan: 07:00-22:00 WITA</p>
+            <p>Pemesanan: 07:00-22:00 wita</p>
             <a href="/pemesanan" class="order-btn">Pesan Galon</a>
         </section>
     </main>
