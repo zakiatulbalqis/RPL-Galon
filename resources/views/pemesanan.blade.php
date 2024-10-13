@@ -16,7 +16,7 @@
 
         <div class="product">
             <div class="item">
-                <p>LE MINERALE</p>
+                <p>LE MINERALEE</p>
                 <img src="img/le_minerale.png" alt="Mineral">
                 <p>Rp 5.000</p>
                 <button onclick="updateCount('mineral', -1)">-</button>
