@@ -10,6 +10,7 @@ use App\Http\Controllers\LoginController;
 Route::get('/pemesanan', function () {
     return view('pemesanan');
 });
+
 Route::get('/', function () {
     return view('home');
 });
@@ -33,6 +34,7 @@ Route::get('/tambah', function () {
 });
 
 Route::post('/tambah',[PelangganController::class,'store']);
+
 
 Route::get('/login', [LoginController::class, 'showLoginForm'])->name('login');
 Route::post('/login', [LoginController::class, 'login']);
