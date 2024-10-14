@@ -3,103 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/pemesanan.css">
     <title>AQUANTER Pemesanan</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f0f0f0;
-            margin: 0;
-            padding: 0;
-        }
-
-        .header {
-            background-color: #6eb5ff;
-            padding: 20px;
-            text-align: left;
-        }
-
-        .header h1 {
-            margin: 0;
-            color: #fff;
-        }
-
-        .container {
-            width: 500px;
-            margin: 40px auto;
-            padding: 20px;
-            background-color: #e0e0e0;
-            border-radius: 8px;
-        }
-
-        h2 {
-            text-align: center;
-            margin-bottom: 20px;
-        }
-
-        .product {
-            display: flex;
-            justify-content: space-between;
-        }
-
-        .item {
-            text-align: center;
-            padding: 10px;
-        }
-
-        .item img {
-            width: 60px;
-            height: 60px;
-        }
-
-        .item p {
-            margin: 10px 0;
-        }
-
-        button {
-            margin: 5px;
-            padding: 5px 10px;
-            background-color: #6eb5ff;
-            border: none;
-            color: white;
-            cursor: pointer;
-            border-radius: 4px;
-        }
-
-        button:hover {
-            background-color: #559fd7;
-        }
-
-        input[type="number"] {
-            width: 40px;
-            text-align: center;
-        }
-
-        form {
-            margin-top: 20px;
-        }
-
-        form input[type="text"] {
-            width: calc(100% - 20px);
-            margin-bottom: 10px;
-            padding: 10px;
-            border: none;
-            border-radius: 4px;
-        }
-
-        form button {
-            width: 100%;
-            padding: 10px;
-            background-color: #4caf50;
-            color: white;
-            border: none;
-            cursor: pointer;
-            border-radius: 4px;
-        }
-
-        form button:hover {
-            background-color: #45a049;
-        }
-    </style>
+    
 </head>
 <body>
     <div class="header">
@@ -111,7 +17,7 @@
 
         <div class="product">
             <div class="item">
-                <p>LE MINERALEE</p>
+                <p>LE MINERALE</p>
                 <img src="img/le_minerale.png" alt="Mineral">
                 <p>Rp 5.000</p><!-- HARGA -->
                 <button onclick="updateCount('aqua', -1)">-</button>
@@ -138,14 +44,22 @@
         </div>
 
         <form action="{{ route('order.submit') }}" method="post">
-        @csrf
-            <input type="hidden" name="mineral_qty" id="mineral_qty">
-            <input type="hidden" name="ro_qty" id="ro_qty">
-            <input type="hidden" name="hexa_qty" id="hexa_qty">
+            @csrf
 
-            <input type="text" name="name" placeholder="Nama" required>
-            <input type="text" name="address" placeholder="Alamat" required>
-            <input type="text" name="phone" placeholder="No. Hp" required>
+            <div class="form-group">
+                <label for="name">Nama</label>
+                <input type="text" id="name" name="name" placeholder="Nama" required>
+            </div>
+            <div class="form-group">
+                <label for="address">Alamat</label>
+                <input type="text" id="address" name="address" placeholder="Alamat" required>
+            </div>
+            <div class="form-group">
+                <label for="phone">No. Hp</label>
+                <input type="text" id="phone" name="phone" placeholder="No. Hp" required>
+            </div>
+
+            <!-- Add any other necessary fields here -->
 
             <button type="submit">Pesan</button>
         </form>

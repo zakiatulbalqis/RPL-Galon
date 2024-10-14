@@ -6,6 +6,7 @@ use App\Models\Pelanggan;
 use App\Http\Controllers\OrderController;
 use App\Http\Controllers\LoginController;
 
+Route::get('/proses', [OrderController::class, 'proses'])->name('order.proses');
 
 Route::get('/pemesanan', function () {
     return view('pemesanan');
@@ -45,4 +46,4 @@ Route::resource('pelanggans', PelangganController::class);
 
 Route::post('/order-submit', [OrderController::class, 'submit'])->name('order.submit');
 
-Route::get('/order-confirmation', [OrderController::class, 'konfirmasi'])->name('order.confirmation');
+Route::post('/proses', [OrderController::Class, 'proses'])->name('order.proses');

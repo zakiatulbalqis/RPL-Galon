@@ -24,8 +24,22 @@ class OrderController extends Controller
         return redirect()->route('order.confirmation');
     }
 
-    public function konfirmasi()
+    public function proses(Request $request)
     {
-        return view('konfirmasi');
+        // Handle the form submission data
+        // For example, you might save it to the database or process it
+
+        // Redirect to the 'proses' page
+        return view('proses'); // Make sure the 'proses.blade.php' view exists
     }
+
+    public function submitOrder(Request $request)
+{
+    // Handle the order submission
+
+    // Redirect to the proses page
+    return redirect()->route('order.proses');
 }
+
+}
+
