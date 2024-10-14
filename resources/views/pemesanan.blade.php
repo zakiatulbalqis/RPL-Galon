@@ -162,7 +162,8 @@
             </div>
         </div>
 
-        <form action="order.php" method="post">
+        <form action="{{ route('order.submit') }}" method="post">
+        @csrf
             <input type="hidden" name="mineral_qty" id="mineral_qty">
             <input type="hidden" name="ro_qty" id="ro_qty">
             <input type="hidden" name="hexa_qty" id="hexa_qty">

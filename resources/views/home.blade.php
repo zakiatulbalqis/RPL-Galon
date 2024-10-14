@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -101,6 +102,7 @@ footer a {
 
 =======
 >>>>>>> d170d155ca7ab63615a9c11b487abea1ec414935
+
 <body>
     <header>
         <div class="nav-bar">
@@ -113,13 +115,16 @@ footer a {
 
 
     <main>
-        <section class="hero">
+    <section class="hero">
+        <div class="overlay-panel">
             <h1>Selamat Datang di <br> AQUANTER!</h1>
             <p>Penjualan galon siap antar</p>
-            <p>Pemesanan: 07:00-22:00</p>
-            <a href="/pemesanan" class="order-btn">Pesan Galon</a>
-        </section>
-    </main>
+            <p>Pemesanan: 07:00-22:00 WITA</p>
+            <a href="/pemesanan" class="order-btn">Pesan Sekarang</a>
+        </div>
+    </section>
+</main>
+
     <script href = "script/home.php"></script>
 </body>
 </html>

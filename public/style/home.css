@@ -96,3 +96,35 @@ footer a {
     text-decoration: none;
     font-size: 18px;
 }
+
+/* Ensures full-height for hero section */
+.hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Full viewport height */
+}
+
+.overlay-panel {
+    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white */
+    padding: 2rem;
+    border-radius: 8px;
+    max-width: 600px;
+    text-align: center;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3); /* Adds subtle shadow for better visibility */
+}
+
+.overlay-panel h1, .overlay-panel p, .overlay-panel a {
+    color: #333; /* Dark color for readability */
+}
+
+/* Optional styling for button */
+.order-btn {
+    display: inline-block;
+    padding: 0.8rem 1.5rem;
+    color: #fff;
+    background-color: #5DAEFE;
+    border-radius: 4px;
+    text-decoration: none;
+    margin-top: 1rem;
+}

@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\PelangganController;
 use App\Models\Pelanggan;
+use App\Http\Controllers\OrderController;
 use App\Http\Controllers\LoginController;
 
 
@@ -38,3 +39,8 @@ Route::post('/login', [LoginController::class, 'login']);
 Route::post('/logout', [LoginController::class, 'logout'])->name('logout');
 
 
+Route::resource('pelanggans', PelangganController::class);
+
+Route::post('/order-submit', [OrderController::class, 'submit'])->name('order.submit');
+
+Route::get('/order-confirmation', [OrderController::class, 'konfirmasi'])->name('order.confirmation');
