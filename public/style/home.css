@@ -7,13 +7,6 @@
 }
 
 body {
-    background-image: url('path/to/your/image.jpg');
-    background-size: cover; /* Agar gambar menutupi seluruh layar */
-    background-position: center; /* Pusatkan gambar */
-    background-repeat: no-repeat; /* Jangan ulang gambar */   
-}
-
-body {
     background-image: url('../img/water_background.jpg');
     background-size: cover; /* This ensures the image covers the entire background */
     background-repeat: no-repeat;
@@ -45,7 +38,7 @@ body {
 
 /* Hero Section */
 .hero {
-    background-image: url("img/WhatsApp Image 2024-10-06 at 14.25.55 (3).jpeg");
+    background-image: url('img/water_background.jpg');
     background-size: cover;
     background-position: center;
     height: 80vh;
