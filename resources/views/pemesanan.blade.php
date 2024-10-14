@@ -45,14 +45,22 @@
         </div>
 
         <form action="{{ route('order.submit') }}" method="post">
-        @csrf
-            <input type="hidden" name="mineral_qty" id="mineral_qty">
-            <input type="hidden" name="ro_qty" id="ro_qty">
-            <input type="hidden" name="hexa_qty" id="hexa_qty">
+            @csrf
 
-            <input type="text" name="name" placeholder="Nama" required>
-            <input type="text" name="address" placeholder="Alamat" required>
-            <input type="text" name="phone" placeholder="No. Hp" required>
+            <div class="form-group">
+                <label for="name">Nama</label>
+                <input type="text" id="name" name="name" placeholder="Nama" required>
+            </div>
+            <div class="form-group">
+                <label for="address">Alamat</label>
+                <input type="text" id="address" name="address" placeholder="Alamat" required>
+            </div>
+            <div class="form-group">
+                <label for="phone">No. Hp</label>
+                <input type="text" id="phone" name="phone" placeholder="No. Hp" required>
+            </div>
+
+            <!-- Add any other necessary fields here -->
 
             <button type="submit">Pesan</button>
         </form>
