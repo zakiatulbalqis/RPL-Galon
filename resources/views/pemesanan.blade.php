@@ -20,11 +20,10 @@
                 <p>LE MINERALE</p>
                 <img src="img/le_minerale.png" alt="Mineral">
                 <p>Rp 5.000</p><!-- HARGA -->
-                <button onclick="updateCount('mineral', -1)">-</button>
-                <input type="number" id="mineral" value="0" min="0">
-                <button onclick="updateCount('mineral', 1)">+</button>
+                <button onclick="updateCount('aqua', -1)">-</button>
+                <input type="number" id="aqua" value="0" min="0">
+                <button onclick="updateCount('aqua', 1)">+</button>
             </div>
-
             <div class="item">
                 <p>AQUA</p>
                 <img src="img/8477693_7db2dccb-4226-493e-85ef-949a5d73d81f_700_700.jpg" alt="AQUA">

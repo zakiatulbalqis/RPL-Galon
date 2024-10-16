@@ -14,7 +14,7 @@
         <div class="nav-bar">
             <a href="/" class="logo">AQUANTER</a>
             <nav>
-                <a href="/">Login</a>
+                <a href="/login">Login</a>
             </nav>
         </div>
     </header>
