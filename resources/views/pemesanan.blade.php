@@ -17,29 +17,29 @@
 
         <div class="product">
             <div class="item">
-                <p>LE MINERALE</p>
+                <p>LE MINERALE (15 L)</p>
                 <img src="img/le_minerale.png" alt="Mineral">
-                <p>Rp 5.000</p><!-- HARGA -->
+                <p>Rp 20.000</p>
                 <button onclick="updateCount('aqua', -1)">-</button>
                 <input type="number" id="aqua" value="0" min="0">
                 <button onclick="updateCount('aqua', 1)">+</button>
             </div>
             <div class="item">
-                <p>AQUA</p>
-                <img src="img/8477693_7db2dccb-4226-493e-85ef-949a5d73d81f_700_700.jpg" alt="AQUA">
-                <p>Rp 10.000</p>
-                <button onclick="updateCount('aqua', -1)">-</button>
-                <input type="number" id="aqua" value="0" min="0">
-                <button onclick="updateCount('aqua', 1)">+</button>
-            </div>
-
-            <div class="item">
-                <p>CLEO</p>
+                <p>CLEO (19 L)</p>
                 <img src="img/Screenshot-2023-02-07-at-7.43.48-AM.png" alt="Cleo">
-                <p>Rp 12.000</p>
+                <p>Rp 45.000</p>
                 <button onclick="updateCount('cleo', -1)">-</button>
                 <input type="number" id="cleo" value="0" min="0">
                 <button onclick="updateCount('cleo', 1)">+</button>
+            </div>
+
+            <div class="item">
+                <p>AQUA (19 L)</p>
+                <img src="img/aqua.jpg" alt="AQUA">
+                <p>Rp 50.000</p>
+                <button onclick="updateCount('aqua', -1)">-</button>
+                <input type="number" id="aqua" value="0" min="0">
+                <button onclick="updateCount('aqua', 1)">+</button>
             </div>
         </div>
 
