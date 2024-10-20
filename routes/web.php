@@ -29,10 +29,16 @@ Route::get('/tambah', function () {
 });
 
 Route::post('/tambah',[PelangganController::class,'store']);
+Route::resource('pelanggans', PelangganController::class);
+
 Route::get('/proses', [OrderController::class, 'proses'])->name('order.proses');
+Route::post('/order-submit', [OrderController::class, 'submit'])->name('order.submit');
+Route::post('/proses', [OrderController::Class, 'proses'])->name('order.proses');
+
 Route::get('/login', [LoginController::class, 'showLoginForm'])->name('login');
 Route::post('/login', [LoginController::class, 'login']);
 Route::post('/logout', [LoginController::class, 'logout'])->name('logout');
-Route::resource('pelanggans', PelangganController::class);
-Route::post('/order-submit', [OrderController::class, 'submit'])->name('order.submit');
-Route::post('/proses', [OrderController::Class, 'proses'])->name('order.proses');
+
+
+Route::get('/login', [GalonController::class, 'login'])->name('login');
+Route::post('/login', [Galoncontroller::class, 'login'])->name('login.process');
