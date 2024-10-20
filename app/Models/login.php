@@ -10,7 +10,7 @@ class login extends Model
     use HasFactory;
     protected $table = 'users';
 
-    protected $fillabel = [
+    protected $fillable = [
         'name',
         'email',
         'password',
