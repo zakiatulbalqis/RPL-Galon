@@ -23,10 +23,22 @@ class PesanResource extends Resource
     {
         return $form
             ->schema([
-                Forms\Components\TextInput::make(' nama_pesanan')
+                Forms\Components\TextInput::make('nama_pesanan')
                     ->required()
                     ->maxLength(255),
                 Forms\Components\TextInput::make('jumlah_Pesanan')
+                    ->required()
+                    ->numeric(),
+                Forms\Components\TextInput::make('alamat')
+                    ->required()
+                    ->maxLength(255),
+                Forms\Components\TextInput::make('no hp')
+                    ->required()
+                    ->maxLength(255),
+                Forms\Components\TextInput::make('item')
+                    ->required()
+                    ->maxLength(255),
+                Forms\Components\TextInput::make('harga')
                     ->required()
                     ->numeric(),
             ]);
@@ -36,10 +48,20 @@ class PesanResource extends Resource
     {
         return $table
             ->columns([
-                Tables\Columns\TextColumn::make(' nama_pesanan')
+                Tables\Columns\TextColumn::make('nama_pesanan')
                     ->searchable(),
                 Tables\Columns\TextColumn::make('jumlah_Pesanan')
                     ->numeric()
+                    ->sortable(),
+                Tables\Columns\TextColumn::make('alamat')
+                    ->searchable(),
+                Tables\Columns\TextColumn::make('no hp')
+                    ->searchable(),
+                Tables\Columns\TextColumn::make('item')
+                    ->searchable(),
+                Tables\Columns\TextColumn::make('harga')
+                    ->numeric()
+                    ->prefix('Rp. ')
                     ->sortable(),
                 Tables\Columns\TextColumn::make('created_at')
                     ->dateTime()
