@@ -11,7 +11,7 @@
         <div class="nav-bar">
             <a href="/" class="logo">AQUANTER</a>
             <nav>
-                <a href="/login">Login</a>
+                <a href="/admin/login">Login</a>
             </nav>
         </div>
     </header>
@@ -21,7 +21,7 @@
                 <h1>Selamat Datang di <br> akuanter</h1>
                 <p>Penjualan galon siap antar</p>
                 <p>Pemesanan: 07:00-22:00 WITA</p>
-                <a href="/pemesanan" class="order-btn">Pesan Sekarang</a>
+                <a href="/pemesan" class="order-btn">Pesan Sekarang</a>
             </div>
         </section>
     </main>

@@ -13,8 +13,12 @@ return new class extends Migration
     {
         Schema::create('pesans', function (Blueprint $table) {
             $table->id();
-            $table->string(' nama_pesanan');
+            $table->string('nama_pesanan');
             $table->integer('jumlah_Pesanan');
+            $table->string('alamat');
+            $table->string('no hp');
+            $table->string('item');
+            $table->integer('harga');
             $table->timestamps();
         });
     }

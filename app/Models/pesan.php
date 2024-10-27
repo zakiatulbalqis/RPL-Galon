@@ -4,8 +4,8 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;
 
+
 class pesan extends Model
 {
-    
-    protected $fillable =['nama_pesanan', 'jumlah_pesanan'];
+    protected $fillable =['nama_pesanan', 'jumlah_Pesanan','alamat','no hp','item','harga'];
 }
