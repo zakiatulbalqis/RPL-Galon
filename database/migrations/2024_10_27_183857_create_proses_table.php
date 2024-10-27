@@ -14,7 +14,7 @@ return new class extends Migration
         Schema::create('proses', function (Blueprint $table) {
             $table->id();
             $table->text('alamat');
-            $table->string('nama_pesan');
+            $table->string('matahari');
             $table->timestamps();
         });
     }
