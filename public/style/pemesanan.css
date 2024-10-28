@@ -30,7 +30,9 @@ h2 {
 }
 
 .product {
-    display: flex;
+    grid-template-columns:repeat(3,3fr);
+    display: grid;
+
     justify-content: space-between;
 }
 
