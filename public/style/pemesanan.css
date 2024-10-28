@@ -6,7 +6,7 @@ body {
 }
 
 .header {
-    background-color: #ffe06e;
+    background-color: #559fd7;
     padding: 20px;
     text-align: left;
 }
@@ -20,7 +20,7 @@ body {
     width: 500px;
     margin: 40px auto;
     padding: 20px;
-    background-color: #542c4c;
+    background-color: #559fd7;
     border-radius: 8px;
 }
 
@@ -30,13 +30,17 @@ h2 {
 }
 
 .product {
-    display: flex;
+    grid-template-columns:repeat(3,3fr) ;
+    display: grid;
+    
     justify-content: space-between;
 }
 
 .item {
     text-align: center;
     padding: 10px;
+
+    
 }
 
 .item img {
