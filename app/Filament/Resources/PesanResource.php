@@ -23,7 +23,9 @@ class PesanResource extends Resource
     {
         return $form
             ->schema([
-                Forms\Components\TextInput::make('nama_pesanan')
+                Forms\Components\Hidden::make('pengguna')
+                    ->default(auth()->id()),
+                Forms\Components\TextInput::make('nama_pelanggan')
                     ->required()
                     ->maxLength(255),
                 Forms\Components\TextInput::make('jumlah_Pesanan')
@@ -48,7 +50,7 @@ class PesanResource extends Resource
     {
         return $table
             ->columns([
-                Tables\Columns\TextColumn::make('nama_pesanan')
+                Tables\Columns\TextColumn::make('nama_pelanggan')
                     ->searchable(),
                 Tables\Columns\TextColumn::make('jumlah_Pesanan')
                     ->numeric()
@@ -61,7 +63,7 @@ class PesanResource extends Resource
                     ->searchable(),
                 Tables\Columns\TextColumn::make('harga')
                     ->numeric()
-                    ->prefix('Rp. ')
+                    ->prefix("RP. ")
                     ->sortable(),
                 Tables\Columns\TextColumn::make('created_at')
                     ->dateTime()

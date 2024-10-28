@@ -6,7 +6,7 @@ body {
 }
 
 .header {
-    background-color: #6eb5ff;
+    background-color: #559fd7;
     padding: 20px;
     text-align: left;
 }
@@ -20,7 +20,7 @@ body {
     width: 500px;
     margin: 40px auto;
     padding: 20px;
-    background-color: #e0e0e0;
+    background-color: #559fd7;
     border-radius: 8px;
 }
 
@@ -30,13 +30,23 @@ h2 {
 }
 
 .product {
-    display: flex;
+<<<<<<< HEAD
+    grid-template-columns:repeat(3,3fr);
+    display: grid;
+
+=======
+    grid-template-columns:repeat(3,3fr) ;
+    display: grid;
+    
+>>>>>>> bde221ea39dbd4ce7c7b5d2216d33bdd4edc4046
     justify-content: space-between;
 }
 
 .item {
     text-align: center;
     padding: 10px;
+
+    
 }
 
 .item img {
