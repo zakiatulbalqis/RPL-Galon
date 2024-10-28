@@ -28,6 +28,9 @@ class StatusResource extends Resource
                     ->numeric(),
                 Forms\Components\Toggle::make('sudah_terima')
                     ->required(),
+                Forms\Components\Hidden::make('pengguna')
+                    ->default(auth()->id()),
+               
             ]);
     }
 

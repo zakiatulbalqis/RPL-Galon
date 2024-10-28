@@ -13,6 +13,7 @@ return new class extends Migration
     {
         Schema::create('statuses', function (Blueprint $table) {
             $table->id();
+            $table->foreignId('pengguna')->constrained('users')->cascadeOnDelete();
             $table->integer('jumlah_pesanan');
             $table->boolean('sudah_terima');
             $table->timestamps();
