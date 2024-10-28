@@ -30,7 +30,7 @@ h2 {
 }
 
 .product {
-    grid-template-columns:repeat(3,4fr);
+    grid-template-columns:repeat(4,1fr);
     display: grid;
 
     justify-content: space-between;
