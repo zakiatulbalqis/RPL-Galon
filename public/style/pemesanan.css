@@ -6,7 +6,7 @@ body {
 }
 
 .header {
-    background-color: #ffe06e;
+    background-color: #559fd7;
     padding: 20px;
     text-align: left;
 }
@@ -19,8 +19,8 @@ body {
 .container {
     width: 500px;
     margin: 40px auto;
-    padding: 20px;
-    background-color: #542c4c;
+    padding: 50px;
+    background-color: #a9a9a9;
     border-radius: 8px;
 }
 
@@ -30,24 +30,36 @@ h2 {
 }
 
 .product {
-    grid-template-columns:repeat(3,4fr);
     display: grid;
-
-    justify-content: space-between;
+    grid-template-columns: repeat(4, 1fr); 
+    gap: 10px; 
+    justify-items: center;
 }
 
 .item {
     text-align: center;
-    padding: 10px;
+    padding: 5px; /* Reduced padding for a tighter layout */
+    font-size: small;
+}
+
+.item_tengah {
+    text-align: center;
+    font-size: small;
+    max-width: 10px; /* Set maximum width */
+    max-height: 10px; /* Set maximum height */
+    width: auto; /* Maintain aspect ratio */
+    height: auto; /* Maintain aspect ratio */
 }
 
 .item img {
-    width: 60px;
-    height: 60px;
+    max-width: 50px; /* Set maximum width */
+    max-height: 50px; /* Set maximum height */
+    width: auto; /* Maintain aspect ratio */
+    height: auto; /* Maintain aspect ratio */
 }
 
 .item p {
-    margin: 10px 0;
+    margin: 5px 0; /* Reduced margin for better spacing */
 }
 
 button {
@@ -79,18 +91,4 @@ form input[type="text"] {
     padding: 10px;
     border: none;
     border-radius: 4px;
-}
-
-form button {
-    width: 100%;
-    padding: 10px;
-    background-color: #4caf50;
-    color: white;
-    border: none;
-    cursor: pointer;
-    border-radius: 4px;
-}
-
-form button:hover {
-    background-color: #45a049;
 }
